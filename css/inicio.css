@@ -198,7 +198,7 @@ hr {
 
 .video-miniatura{
     height: 190px;
-    background: url(/images/videoMiniatura.jpg);
+    background: url(../images/videoMiniatura.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -230,7 +230,7 @@ hr {
 
 .video-miniatura-covid{
     height: 190px;
-    background: url(/images/covid-19.jpg);
+    background: url(../images/covid-19.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -262,7 +262,7 @@ hr {
 }
 .publicacion-imagen{
     height: 100%;
-    background: url(/images/publicaciones-recientes.jpg);
+    background: url(../images/publicaciones-recientes.jpg);
     background-position: center;
     background-size: cover;
 }
