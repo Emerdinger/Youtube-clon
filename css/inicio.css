@@ -29,9 +29,18 @@ hr {
     border: none;
 }
 
+.nav-boton{
+    color: wheat;
+}
+
 #navbar-youtube{
     background-color: #272727;
     z-index: 5;
+}
+
+#navbar-youtube-screen{
+    background-color: #272727;
+    display: none;
 }
 
 .busqueda{
@@ -87,8 +96,7 @@ hr {
 }
 
 .nav-icon {
-    padding-right: 1rem;
-    color: #909090;
+    color: #fff;
 }
 
 #youtube-logo {
@@ -140,18 +148,19 @@ hr {
 
 #user-menu {
     width: 330px; 
-    height: 103vh; 
+    height: 94%;
     position: fixed; 
     overflow-y: scroll;
     background-color: rgba(39, 39, 39, 0.9);
-    z-index: 10;
     left: 200%;
     top: 0;
+    z-index: 2;
+    margin-top: 4.15%;
     transition: 850ms;
 }
 
 #user-menu.active{
-    left: 69%;
+    left: 65%;
     transition: 350ms;
 }
 
@@ -266,3 +275,41 @@ hr {
     background-position: center;
     background-size: cover;
 }
+
+/* Responsive */
+
+@media (max-width: 750px) {
+    #navbar-youtube{
+        display: none;
+    }
+
+    #navbar-youtube-screen{
+        display:block;
+    }
+
+    #sidebar{
+     margin-top: 0;   
+     height: 96%;
+    }
+
+    #user-menu.active{
+        margin-top: 0;   
+        left: 50%;
+        height: 96%;
+    }
+}
+
+@media (max-width: 500px) {
+    #navbar-youtube{
+        display: none;
+    }
+
+    #navbar-youtube-screen{
+        display:block;
+    }
+
+    #user-menu.active{
+        left: 0;
+    }
+}
+
