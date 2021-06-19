@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/trending.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Tendencias</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg" id="navbar-youtube">
+        <div class="container-fluid">
+            <div class="menu-sidebar ps-3">
+                <a class="menu-bars me-2" id="show-menu">
+                    <i class="fas fa-bars fa-lg nav-icon"></i>
+                </a>
+                <a href="index.html">
+                    <h1><i class="fab fa-youtube" id="youtube-logo"></i>YouTube</h1>
+                </a>
+            </div>
+            <button class="navbar-toggler nav-boton" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars fa-lg nav-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex ms-auto">
+                    <input class="busqueda" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn ps-4 pe-4 icono-busqueda" type="submit"><i class="fas fa-search"
+                            style="color: #fff;"></i></button>
+                    <i class="fas fa-microphone fa-lg pt-2 ps-2" style="color: #fff;"></i>
+                </form>
+                <ul class="navbar-nav ms-auto me-5" id="nav-items">
+                    <li class="nav-item">
+                        <i title="Crear" class="fas fa-plus-square fa-lg pt-3" style="color: #fff;"></i>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i title="Apps de YouTube" class="fab fa-squarespace fa-lg pt-2 ms-2"
+                                style="color: #fff;"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i title="Notificaciones" class="fas fa-bell fa-lg pt-2" style="color: #fff;"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="user-profile-dropdown">
+                            <i title="Notificaciones" class="fas fa-user-circle fa-lg pt-2" style="color: #fff;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="fixed-bottom" id="navbar-youtube-screen">
+        <div class="container-fluid text-end">
+            <div class="row">
+                <div class="col-2">
+                    <a class="nav-link" id="show-menu-2">
+                        <i class="fas fa-bars fa-lg nav-icon"></i>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a class="nav-link" href="#">
+                        <i title="Crear" class="fas fa-plus-square fa-lg" style="color: #fff;"></i>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a class="nav-link" href="#">
+                        <i title="Apps de YouTube" class="fab fa-squarespace fa-lg" style="color: #fff;"></i>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a class="nav-link" href="#">
+                        <i title="Notificaciones" class="fas fa-bell fa-lg" style="color: #fff;"></i>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a class="nav-link" href="#" id="user-profile-dropdown-2">
+                        <i title="Notificaciones" class="fas fa-user-circle fa-lg" style="color: #fff;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="p-3 text-white" id="sidebar">
+        <div class="sidebar-section">
+            <li class="nav-text"><a href="index.html"><i class="fas fa-home fa-lg nav-icon"></i>Principal</a></li>
+            <li class="nav-text"><a href="trending.html"><i class="fas fa-fire fa-lg nav-icon"></i>Tendencias</a></li>
+            <li class="nav-text"><a href="#"><i class="fab fa-youtube fa-lg nav-icon"></i>Suscripciones</a></li>
+        </div>
+        <hr>
+        <div class="sidebar-section">
+            <li class="nav-text"><a href="#"><i class="fas fa-book-open fa-lg nav-icon"></i>Biblioteca</a></li>
+            <li class="nav-text"><a href="#"><i class="fas fa-history fa-lg nav-icon"></i>Historial</a></li>
+            <li class="nav-text"><a href="#"><i class="fas fa-play fa-lg nav-icon"></i>Tus videos</a></li>
+            <li class="nav-text"><a href="#"><i class="fas fa-clock fa-lg nav-icon"></i>Ver más tarde</a></li>
+        </div>
+        <hr>
+        <div class="sidebar-section">
+            <h1>SUSCRIPCIONES</h1>
+            <li class="nav-text"><a href="#"><i class="fas fa-user-circle fa-lg nav-icon"></i>Canal 1</a></li>
+            <li class="nav-text"><a href="#"><i class="fas fa-user-circle fa-lg nav-icon"></i>Canal 2</a></li>
+            <li class="nav-text"><a href="#"><i class="fas fa-user-circle fa-lg nav-icon"></i>Canal 3</a></li>
+            <li class="nav-text"><a href="#"><i class="fas fa-user-circle fa-lg nav-icon"></i>Canal 4</a></li>
+        </div>
+        <hr>
+        <div class="sidebar-section">
+            <h1>MÁS DE YOUTUBE</h1>
+            <li class="nav-text"><a href="#"><i class="fab fa-youtube fa-lg nav-icon"></i>YouTube Premium</a></li>
+            <li class="nav-text"><a href="#"><i class="fas fa-gamepad fa-lg nav-icon"></i>Videojuegos</a></li>
+            <li class="nav-text"><a href="#"><i class="fas fa-signal fa-lg nav-icon"></i>En vivo</a></li>
+            <li class="nav-text"><a href="#"><i class="fas fa-lightbulb fa-lg nav-icon"></i>Aprendizaje</a></li>
+            <li class="nav-text"><a href="#"><i class="fas fa-trophy fa-lg nav-icon"></i>Deportes</a></li>
+        </div>
+        <hr>
+        <div class="sidebar-section">
+            <li class="nav-text"><a href="#"><i class="fas fa-wrench fa-lg nav-icon"></i>Configuración</a></li>
+            <li class="nav-text"><a href="#"><i class="fab fa-font-awesome-flag fa-lg nav-icon"></i>Denuncias</a></li>
+            <li class="nav-text"><a href="#"><i class="fas fa-question-circle fa-lg nav-icon"></i>Ayuda</a></li>
+            <li class="nav-text"><a href="#"><i class="fas fa-exclamation fa-lg nav-icon"></i>Enviar comentarios</a>
+            </li>
+        </div>
+        <hr>
+        <div class="sidebar-section">
+            <div class="referencias">
+                <span><a href="">Acerca de</a></span><span><a href=""> Prensa</a></span>
+                <span><a href="">Derechos de autor</a></span>
+                <span><a href="">Comunicarte con nosotros</a></span>
+                <span><a href="">Creadores </a></span><span><a href="">Anunciar</a></span>
+                <span><a href="">Desarrolladores</a></span>
+                <br>
+                <span><a href="">Condiciones </a></span><span><a href="">Privacidad</a></span>
+                <span><a href="">Políticas y seguridad</a></span>
+                <span><a href="">Cómo funciona YouTube</a></span>
+                <span><a href="">Prueba funciones nuevas</a></span>
+                <br><br>
+                <p>© 2021 Google LLC</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- User Menu -->
+    <div id="user-menu">
+        <div class="row text-white">
+            <div class="col-md-2 pt-4 ps-4">
+                <i class="fas fa-user-circle fa-2x nav-icon"></i>
+            </div>
+            <div class="col-md-10 pt-3">
+                <div class="col-md-12">
+                    <b>Emerlive</b>
+                </div>
+                <div class="col-md-12">
+                    <a href="#">Administra tu Cuenta de Google</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="user-menu-section">
+            <li class="user-menu-nav-text"><a href="#"><i class="fas fa-user-alt fa-lg nav-icon"></i>Tu canal</a></li>
+            <li class="user-menu-nav-text"><a href="#"><i class="fas fa-dollar-sign fa-lg nav-icon"></i>Compras y
+                    membresías</a></li>
+            <li class="user-menu-nav-text"><a href="#"><i class="fas fa-tools fa-lg nav-icon"></i>YouTube Studio</a>
+            </li>
+            <li class="user-menu-nav-text"><a href="#"><i class="fas fa-users fa-lg nav-icon"></i>Cambiar de cuenta</a>
+            </li>
+            <li class="user-menu-nav-text"><a href="#"><i class="fas fa-sign-out-alt fa-lg nav-icon"></i>Salir</a></li>
+        </div>
+        <hr>
+        <div class="user-menu-section">
+            <li class="user-menu-nav-text"><a href="#"><i class="far fa-sun fa-lg nav-icon"></i>Apecto: Tema del
+                    dispositivo</a></li>
+            <li class="user-menu-nav-text"><a href="#"><i class="fas fa-language fa-lg nav-icon"></i>Idioma</a></li>
+            <li class="user-menu-nav-text"><a href="#"><i class="fas fa-globe fa-lg nav-icon"></i>Ubicación</a></li>
+            <li class="user-menu-nav-text"><a href="#"><i class="fas fa-wrench fa-lg nav-icon"></i>Configuración</a>
+            </li>
+            <li class="user-menu-nav-text"><a href="#"><i class="fas fa-user-shield fa-lg nav-icon"></i>Tus datos en
+                    YouTube</a></li>
+            <li class="user-menu-nav-text"><a href="#"><i class="fas fa-question fa-lg nav-icon"></i>Ayuda</a></li>
+            <li class="user-menu-nav-text"><a href="#"><i class="fas fa-exclamation-circle fa-lg nav-icon"></i>Enviar
+                    comentarios</a></li>
+            <li class="user-menu-nav-text"><a href="#"><i class="fas fa-keyboard fa-lg nav-icon"></i>Combinaciones de
+                    teclas</a></li>
+        </div>
+    </div>
+
+    <!-- Tendencias -->
+    <div class="tendencias">
+        <a href="trending.html">
+            <div class="tendencias-titulo">
+                <i style="color: rgb(255,159,0);" class="fas fa-fire fa-3x"></i>
+                <h1>Tendencias</h1>
+            </div>
+        </a>
+        <div class="tendencias-categorias">
+            <a href="#">
+                <h2>Ahora</h2>
+            </a>
+            <a href="#">
+                <h2>Música</h2>
+            </a>
+            <a href="#">
+                <h2>Videojuegos</h2>
+            </a>
+            <a href="#">
+                <h2>Películas</h2>
+            </a>
+        </div>
+    </div>
+
+    <div class="content-trending">
+        <a href="#">
+            <div class="trending-video">
+                <div class="miniatura-video-trending">
+                    <img src="images/miniatura-trending.jpg" alt="">
+                </div>
+                <div class="informacion-video-trending">
+                    <h6>Poblado (Remix) (Official Video)</h6>
+                    <p>J Balvin 9.4M de vistas • hace un día</p>
+                    <p>Es una alegría muy grande compartir estos momentos tan emotivos para mi. Sentimientos tan emocionantes que sin duda los conmoverá</p>
+                </div>
+                <div></div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="trending-video">
+                <div class="miniatura-video-trending">
+                    <img src="images/miniatura-trending.jpg" alt="">
+                </div>
+                <div class="informacion-video-trending">
+                    <h6>Poblado (Remix) (Official Video)</h6>
+                    <p>J Balvin 9.4M de vistas • hace un día</p>
+                    <p>Es una alegría muy grande compartir estos momentos tan emotivos para mi. Sentimientos tan emocionantes que sin duda los conmoverá</p>
+                </div>
+                <div></div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="trending-video">
+                <div class="miniatura-video-trending">
+                    <img src="images/miniatura-trending.jpg" alt="">
+                </div>
+                <div class="informacion-video-trending">
+                    <h6>Poblado (Remix) (Official Video)</h6>
+                    <p>J Balvin 9.4M de vistas • hace un día</p>
+                    <p>Es una alegría muy grande compartir estos momentos tan emotivos para mi. Sentimientos tan emocionantes que sin duda los conmoverá</p>
+                </div>
+                <div></div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="trending-video">
+                <div class="miniatura-video-trending">
+                    <img src="images/miniatura-trending.jpg" alt="">
+                </div>
+                <div class="informacion-video-trending">
+                    <h6>Poblado (Remix) (Official Video)</h6>
+                    <p>J Balvin 9.4M de vistas • hace un día</p>
+                    <p>Es una alegría muy grande compartir estos momentos tan emotivos para mi. Sentimientos tan emocionantes que sin duda los conmoverá</p>
+                </div>
+                <div></div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="trending-video">
+                <div class="miniatura-video-trending">
+                    <img src="images/miniatura-trending.jpg" alt="">
+                </div>
+                <div class="informacion-video-trending">
+                    <h6>Poblado (Remix) (Official Video)</h6>
+                    <p>J Balvin 9.4M de vistas • hace un día</p>
+                    <p>Es una alegría muy grande compartir estos momentos tan emotivos para mi. Sentimientos tan emocionantes que sin duda los conmoverá</p>
+                </div>
+                <div></div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="trending-video">
+                <div class="miniatura-video-trending">
+                    <img src="images/miniatura-trending.jpg" alt="">
+                </div>
+                <div class="informacion-video-trending">
+                    <h6>Poblado (Remix) (Official Video)</h6>
+                    <p>J Balvin 9.4M de vistas • hace un día</p>
+                    <p>Es una alegría muy grande compartir estos momentos tan emotivos para mi. Sentimientos tan emocionantes que sin duda los conmoverá</p>
+                </div>
+                <div></div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="trending-video">
+                <div class="miniatura-video-trending">
+                    <img src="images/miniatura-trending.jpg" alt="">
+                </div>
+                <div class="informacion-video-trending">
+                    <h6>Poblado (Remix) (Official Video)</h6>
+                    <p>J Balvin 9.4M de vistas • hace un día</p>
+                    <p>Es una alegría muy grande compartir estos momentos tan emotivos para mi. Sentimientos tan emocionantes que sin duda los conmoverá</p>
+                </div>
+                <div></div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="trending-video">
+                <div class="miniatura-video-trending">
+                    <img src="images/miniatura-trending.jpg" alt="">
+                </div>
+                <div class="informacion-video-trending">
+                    <h6>Poblado (Remix) (Official Video)</h6>
+                    <p>J Balvin 9.4M de vistas • hace un día</p>
+                    <p>Es una alegría muy grande compartir estos momentos tan emotivos para mi. Sentimientos tan emocionantes que sin duda los conmoverá</p>
+                </div>
+                <div></div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="trending-video">
+                <div class="miniatura-video-trending">
+                    <img src="images/miniatura-trending.jpg" alt="">
+                </div>
+                <div class="informacion-video-trending">
+                    <h6>Poblado (Remix) (Official Video)</h6>
+                    <p>J Balvin 9.4M de vistas • hace un día</p>
+                    <p>Es una alegría muy grande compartir estos momentos tan emotivos para mi. Sentimientos tan emocionantes que sin duda los conmoverá</p>
+                </div>
+                <div></div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="trending-video">
+                <div class="miniatura-video-trending">
+                    <img src="images/miniatura-trending.jpg" alt="">
+                </div>
+                <div class="informacion-video-trending">
+                    <h6>Poblado (Remix) (Official Video)</h6>
+                    <p>J Balvin 9.4M de vistas • hace un día</p>
+                    <p>Es una alegría muy grande compartir estos momentos tan emotivos para mi. Sentimientos tan emocionantes que sin duda los conmoverá</p>
+                </div>
+                <div></div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="trending-video">
+                <div class="miniatura-video-trending">
+                    <img src="images/miniatura-trending.jpg" alt="">
+                </div>
+                <div class="informacion-video-trending">
+                    <h6>Poblado (Remix) (Official Video)</h6>
+                    <p>J Balvin 9.4M de vistas • hace un día</p>
+                    <p>Es una alegría muy grande compartir estos momentos tan emotivos para mi. Sentimientos tan emocionantes que sin duda los conmoverá</p>
+                </div>
+                <div></div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="trending-video">
+                <div class="miniatura-video-trending">
+                    <img src="images/miniatura-trending.jpg" alt="">
+                </div>
+                <div class="informacion-video-trending">
+                    <h6>Poblado (Remix) (Official Video)</h6>
+                    <p>J Balvin 9.4M de vistas • hace un día</p>
+                    <p>Es una alegría muy grande compartir estos momentos tan emotivos para mi. Sentimientos tan emocionantes que sin duda los conmoverá</p>
+                </div>
+                <div></div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="trending-video">
+                <div class="miniatura-video-trending">
+                    <img src="images/miniatura-trending.jpg" alt="">
+                </div>
+                <div class="informacion-video-trending">
+                    <h6>Poblado (Remix) (Official Video)</h6>
+                    <p>J Balvin 9.4M de vistas • hace un día</p>
+                    <p>Es una alegría muy grande compartir estos momentos tan emotivos para mi. Sentimientos tan emocionantes que sin duda los conmoverá</p>
+                </div>
+                <div></div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="trending-video">
+                <div class="miniatura-video-trending">
+                    <img src="images/miniatura-trending.jpg" alt="">
+                </div>
+                <div class="informacion-video-trending">
+                    <h6>Poblado (Remix) (Official Video)</h6>
+                    <p>J Balvin 9.4M de vistas • hace un día</p>
+                    <p>Es una alegría muy grande compartir estos momentos tan emotivos para mi. Sentimientos tan emocionantes que sin duda los conmoverá</p>
+                </div>
+                <div></div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="trending-video">
+                <div class="miniatura-video-trending">
+                    <img src="images/miniatura-trending.jpg" alt="">
+                </div>
+                <div class="informacion-video-trending">
+                    <h6>Poblado (Remix) (Official Video)</h6>
+                    <p>J Balvin 9.4M de vistas • hace un día</p>
+                    <p>Es una alegría muy grande compartir estos momentos tan emotivos para mi. Sentimientos tan emocionantes que sin duda los conmoverá</p>
+                </div>
+                <div></div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="trending-video">
+                <div class="miniatura-video-trending">
+                    <img src="images/miniatura-trending.jpg" alt="">
+                </div>
+                <div class="informacion-video-trending">
+                    <h6>Poblado (Remix) (Official Video)</h6>
+                    <p>J Balvin 9.4M de vistas • hace un día</p>
+                    <p>Es una alegría muy grande compartir estos momentos tan emotivos para mi. Sentimientos tan emocionantes que sin duda los conmoverá</p>
+                </div>
+                <div></div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="trending-video">
+                <div class="miniatura-video-trending">
+                    <img src="images/miniatura-trending.jpg" alt="">
+                </div>
+                <div class="informacion-video-trending">
+                    <h6>Poblado (Remix) (Official Video)</h6>
+                    <p>J Balvin 9.4M de vistas • hace un día</p>
+                    <p>Es una alegría muy grande compartir estos momentos tan emotivos para mi. Sentimientos tan emocionantes que sin duda los conmoverá</p>
+                </div>
+                <div></div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="trending-video">
+                <div class="miniatura-video-trending">
+                    <img src="images/miniatura-trending.jpg" alt="">
+                </div>
+                <div class="informacion-video-trending">
+                    <h6>Poblado (Remix) (Official Video)</h6>
+                    <p>J Balvin 9.4M de vistas • hace un día</p>
+                    <p>Es una alegría muy grande compartir estos momentos tan emotivos para mi. Sentimientos tan emocionantes que sin duda los conmoverá</p>
+                </div>
+                <div></div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="trending-video">
+                <div class="miniatura-video-trending">
+                    <img src="images/miniatura-trending.jpg" alt="">
+                </div>
+                <div class="informacion-video-trending">
+                    <h6>Poblado (Remix) (Official Video)</h6>
+                    <p>J Balvin 9.4M de vistas • hace un día</p>
+                    <p>Es una alegría muy grande compartir estos momentos tan emotivos para mi. Sentimientos tan emocionantes que sin duda los conmoverá</p>
+                </div>
+                <div></div>
+            </div>
+        </a>
+        <a href="#">
+            <div class="trending-video">
+                <div class="miniatura-video-trending">
+                    <img src="images/miniatura-trending.jpg" alt="">
+                </div>
+                <div class="informacion-video-trending">
+                    <h6>Poblado (Remix) (Official Video)</h6>
+                    <p>J Balvin 9.4M de vistas • hace un día</p>
+                    <p>Es una alegría muy grande compartir estos momentos tan emotivos para mi. Sentimientos tan emocionantes que sin duda los conmoverá</p>
+                </div>
+                <div></div>
+            </div>
+        </a>
+    </div>
+
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/sidebar.js"></script>
+</body>
+
+</html>
