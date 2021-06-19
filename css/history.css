@@ -1,0 +1,124 @@
+.content-historial{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 20px;
+}
+
+#side-historial{
+    background-color: #272727;
+    position: fixed;
+    margin-top: -1.6rem;
+    right: 0;
+    width: 30%;
+    padding: 20px 20px;
+    height: 100vh;
+    margin-right: 1rem;
+    overflow-y: scroll;
+}
+
+.side-busqueda-historial{
+    position: absolute;
+    border-bottom: 1px solid #fff;
+}
+
+.side-busqueda-historial input{
+    padding-bottom: 10px;
+    background-color: transparent;
+    border: 0;
+}
+
+.side-busqueda-historial ::placeholder{
+    color: #696969;
+}
+
+.section-historial{
+    margin-top: 8vh;
+}
+
+.side-panel{
+    margin-top: 1vh;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.side-panel-texto a{
+    display: flex;
+}
+
+.side-panel-texto a p{
+    padding-left: 10px;
+    font-size: 13px;
+}
+
+.side-panel-texto-historial p{
+    padding-left: 20px;
+}
+
+.content-historial-video{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.miniatura-video-historial img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.informacion-video-historial{
+    color: white;
+    margin: auto;
+}
+
+#side-historial.show-side-right{
+    right: 0;
+    transition: 500ms;
+}
+
+@media (max-width: 900px){
+    .content-historial-video{
+        grid-template-columns: 2fr 2fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 750px){
+    .content-historial{
+        margin-top: 10px;
+    }
+
+    .content-historial-video{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #side-historial{
+        right: -200%;
+        margin-top: -10px;
+        width: 40%;
+        transition: 500ms;
+    }
+}
+
+@media (max-width: 550px){
+    .content-historial-video{
+        grid-template-columns: 1fr;
+    }
+
+    #side-historial{
+        width: 60%;
+    }
+}
+
+@media (max-width: 350px){
+    #side-historial{
+        width: 100%;
+    }
+}

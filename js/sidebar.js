@@ -50,3 +50,18 @@ if (showUserMenu2) {
         }
     });
 }
+
+// Side History
+
+const showHistory = document.querySelector('#history-dropdown');
+const sideHistorial = document.querySelector('#side-historial');
+
+if(showHistory){
+    showHistory.addEventListener('click', (e) =>{
+        if (sideHistorial.classList.contains('show-side-right')){
+            sideHistorial.classList.remove('show-side-right');
+        }else{
+            sideHistorial.classList.add('show-side-right');
+        }
+    });
+}
