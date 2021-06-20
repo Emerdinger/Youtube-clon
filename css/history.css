@@ -9,11 +9,11 @@
 }
 
 #side-historial{
-    background-color: #272727;
+    background-color: rgb(15, 15, 15);
     position: fixed;
     margin-top: -1.6rem;
     right: 0;
-    width: 30%;
+    width: 35%;
     padding: 20px 20px;
     height: 100vh;
     margin-right: 1rem;
@@ -79,12 +79,20 @@ a{
     margin: auto;
 }
 
+.informacion-video-historial p{
+    color: #696969;
+    font-size: 15px;
+}
+
 #side-historial.show-side-right{
     right: 0;
     transition: 500ms;
 }
 
 @media (max-width: 900px){
+    #side-historial{
+        width: 30%;
+    }
     .content-historial-video{
         grid-template-columns: 2fr 2fr 1fr 1fr;
     }
