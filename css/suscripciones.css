@@ -5,6 +5,15 @@
     color: #fff;
 }
 
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover{
+    color: #fff;
+}
+
 .sv{
     display: grid;
     grid-template-columns: repeat(5,1fr);
